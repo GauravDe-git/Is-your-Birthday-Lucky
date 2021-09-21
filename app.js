@@ -40,5 +40,5 @@ checkButton.addEventListener("click", () =>{
     if (bdayDate.value && luckyNumber.value)
     {isNumberLucky(sumOfDOB(bdayDate.value),luckyNumber.value)}
     else
-    {outputArea.innerText = "Insert the details!"}
+    {outputArea.innerText = "Insert the details!(Also: Dont use negative lucky number)"}
 })
