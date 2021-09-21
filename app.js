@@ -22,14 +22,16 @@ function sumOfDOB (DOB)
 
 function isNumberLucky(sum,luckyNumber)
 {
-    if(sum%luckyNumber === 0)
+    if(luckyNumber >= 0)
+    {if(sum%luckyNumber === 0)
     {
         outputArea.innerText = "Your birthday is lucky!"
     }
     else
     {
         outputArea.innerText = "Your birthday is unlucky :("
-    }
+    }}
+    else{ outputArea.innerText = "Lucky number can't be negative"}
 }
 
 //After clicking the button, this happens
